@@ -1,2 +1,21 @@
 .h1
   = "Hello World!"
+
+.form-content
+  = form_for @volunteer, remote: true do |f|
+    .errors
+    .form-group.group-1
+      = f.label :first_name
+      = f.text_field :first_name
+    .form-group.group-2
+      = f.label :last_name
+      = f.text_field :last_name
+    .form-group.group-3
+      = f.label :email
+      = f.text_field :email
+    .form-group.group-4
+      = f.label :phone
+      = f.text_field :phone
+    .form-group.group-5
+      = f.label :terms_and_conditions
+      = f.check_box :terms_and_conditions
