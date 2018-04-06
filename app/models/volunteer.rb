@@ -1,3 +1,4 @@
 class Volunteer < ApplicationRecord
-  validates :terms_and_conditions, acceptance: true
+  validates :first_name, presence: true
+  validates :email, presence: true
 end

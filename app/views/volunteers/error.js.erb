@@ -1,0 +1,10 @@
+$(".notice").remove();
+$(".form-group").removeClass("has-error");
+
+$('#firstNameBlock').append('<div class="notice"><%= escape_javascript(@errorFirstName[0])%></div>');
+
+$('#lastNameBlock').append('<div class="notice"><%= escape_javascript(@errorLastName[0])%></div>');
+
+$('#emailBlock').append('<div class="notice"><%= escape_javascript(@errorEmail[0])%></div>');
+
+$('#phoneBlock').append('<div class="notice"><%= escape_javascript(@errorPhone[0])%></div>');

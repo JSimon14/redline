@@ -1,0 +1,5 @@
+$(".notice").remove();
+$(".form-group").removeClass("has-error");
+
+$('#successBlock').append('<div class="notice"><%= escape_javascript(@successMessage)%></div>');
+

@@ -2,20 +2,26 @@
   = "Hello World!"
 
 .form-content
-  = form_for @volunteer, remote: true do |f|
+  = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
     .errors
     .form-group.group-1
       = f.label :first_name
       = f.text_field :first_name
+      .help-block#firstNameBlock
     .form-group.group-2
       = f.label :last_name
       = f.text_field :last_name
+      .help-block#lastNameBlock
     .form-group.group-3
       = f.label :email
       = f.text_field :email
+      .help-block#emailBlock
     .form-group.group-4
       = f.label :phone
       = f.text_field :phone
+      .help-block#phoneBlock
     .form-group.group-5
-      = f.label :terms_and_conditions
-      = f.check_box :terms_and_conditions
+      = f.submit class: "btn btn-primary"
+    .help-block#successBlock
+
+
