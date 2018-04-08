@@ -1,3 +1,79 @@
 // Place all the styles related to the volunteers controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: 'https://fonts.googleapis.com/css?family=Montserrat:100';
+}
+body {
+  background: url(redlineRedText.jpg) center fixed;
+  margin: 0;
+  padding: 0;
+}
+.errors {
+  display: none;
+}
+.help-block {
+  position: absolute;
+}
+.h1 {
+  font-size: 4.4rem;
+  font-weight: 200;
+  text-align: center;
+  margin-right: 2.7rem;
+  color: #c1081f;
+}
+.container {
+  max-width: 100%;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.motivation, .h2#join, .h2#privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+.content > div.motivation:nth-child(odd) {
+  text-align: right;
+}
+#emphasized {
+  font-weight: 600;
+}
+.h3:not(#emphasized) {
+  font-weight: 200;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin: 0 20rem;
+  background: #c3071f;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.box > .accountable {
+  padding: 1rem;
+  color: white;
+}
+#join, #privacy {
+  flex-direction: column;
+}
+.form-content {
+  margin-bottom: 25rem;
+}
+#new_volunteer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#new_volunteer > div {
+  padding: 5rem;
+}
+#new_volunteer > div label {
+  display: none;
+}
+.form-group {
+  padding: 1rem;
+}
