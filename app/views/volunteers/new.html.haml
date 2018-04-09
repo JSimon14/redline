@@ -1,27 +1,81 @@
 .h1
-  = "RedLine"
+  _red ine
 
-.form-content
-  = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
-    .errors
-    .form-group.group-1
-      = f.label :first_name
-      = f.text_field :first_name
-      .help-block#firstNameBlock
-    .form-group.group-2
-      = f.label :last_name
-      = f.text_field :last_name
-      .help-block#lastNameBlock
-    .form-group.group-3
-      = f.label :email
-      = f.text_field :email
-      .help-block#emailBlock
-    .form-group.group-4
-      = f.label :phone
-      = f.text_field :phone
-      .help-block#phoneBlock
-    .form-group.group-5
-      = f.submit class: "btn btn-primary"
-    .help-block#successBlock
+.container
+  .content
+    .h3.motivation#initial-snippet
+      .redline#emphasized
+        Mueller is defending our democracy.
+    .h3.motivation
+      .redline
+        When Russia interfered in our 2016 election, our government asked Robert Mueller to investigate. As a former FBI director, war hero, and conservative, Mueller was seen as the man for the job by Republicans and Democrats alike.
+    .h3.motivation
+      .redline
+        One year later, Mueller’s investigation is gaining momentum and evidence is emerging that Trump’s team colluded with Russia. Mueller has already charged notable Trump campaign officials with crimes, and more connections with Russia appear every week.
+    .h3.motivation
+      .redline#emphasized
+        Mueller’s investigation is under attack from Republican leaders and President Trump.
+    .h3.motivation
+      .redline#emphasized
+        Trump is considering firing the person investigating him in a clear conflict of interest.
+    .h3.motivation
+      .redline
+        If Trump is innocent, then he has nothing to hide and should let Mueller finish his investigation.
+        %br
+        On the other hand, if Trump’s campaign colluded with Russia, then the American people need to know the truth. Either way, Mueller must be allowed to do his job and find out what happened.
+    .h3.motivation
+      .redline
+        Nobody is above the law -- not even the President. If Trump fires the person investigating him, we need to hit the streets across America and march to send a message.
+    .h3.motivation
+      .redline#emphasized
+        If Trump fires Mueller, he crosses a red line.
 
+  .box
+    .accountable
+      Trump is accountable to us,
+      %br
+      and we deserve to know the truth.
 
+  .content
+    .h2#join
+      %pledge
+        Will you join us in pledging to protest if Trump fires Mueller?
+    .h2#privacy
+      %h3.alerts
+        We’ll send you a rapid response alert on the day Mueller is fired, details about protests in your area, and an opportunity to provide feedback to the RedLine development team.
+      %hr
+      %h6.notice
+        %i We value your privacy. We won’t share your information without your consent.
+          
+
+  .form-content
+    .form-title
+      Sign Up for Rapid Alerts
+    = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
+      .errors
+      .names
+        .form-group.group-1
+          = f.label :first_name
+          = f.text_field :first_name, placeholder:"First name"
+          .help-block#firstNameBlock
+        .form-group.group-2
+          = f.label :last_name
+          = f.text_field :last_name, placeholder:"Last name"
+          .help-block#lastNameBlock
+      .contact
+        .form-group.group-3
+          = f.label :email
+          = f.text_field :email, placeholder:"Email"
+          .help-block#emailBlock
+        .form-group.group-4
+          = f.label :phone
+          = f.text_field :phone, placeholder:"Phone"
+          .help-block#phoneBlock
+      .form-group.group-5
+        = f.submit class: "btn btn-primary"
+      .help-block#successBlock
+    .terms_and_conditions
+      By submitting this form you agree to our #{link_to "Terms and Conditions", terms_and_conditions_path}
+          
+          
+          

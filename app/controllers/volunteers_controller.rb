@@ -23,13 +23,13 @@ class VolunteersController < ApplicationController
       else
         format.js {render :error}
         if (@volunteer.errors.messages[:first_name] != nil)
-          @errorFirstName.push(@volunteer.errors.messages[:first_name][0])
+          @errorFirstName.push(@volunteer.errors.messages[:first_name][0].to_s.capitalize)
         end
         if (@volunteer.errors.messages[:last_name] != nil)
           @errorLastName.push(@volunteer.errors.messages[:last_name][0])
         end
         if (@volunteer.errors.messages[:email] != nil)
-          @errorEmail.push(@volunteer.errors.messages[:email][0])
+          @errorEmail.push(@volunteer.errors.messages[:email][0].to_s.capitalize)
         end
         if (@volunteer.errors.messages[:phone] != nil)
           @errorPhone.push(@volunteer.errors.messages[:phone][0])
