@@ -47,7 +47,10 @@
       %h6.notice
         %i We value your privacy. We won’t share your information without your consent.
           
+
   .form-content
+    .form-title
+      Sign Up for Rapid Alerts
     = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
       .errors
       .names
@@ -71,6 +74,8 @@
       .form-group.group-5
         = f.submit class: "btn btn-primary"
       .help-block#successBlock
+    .terms_and_conditions
+      By submitting this form you agree to our #{link_to "Terms and Conditions", terms_and_conditions_path}
           
           
           
