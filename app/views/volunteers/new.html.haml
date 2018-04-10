@@ -53,27 +53,34 @@
       Sign Up for Rapid Alerts
     = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
       .errors
-      .names
-        .form-group.group-1
-          = f.label :first_name
-          = f.text_field :first_name, placeholder:"First name"
-          .help-block#firstNameBlock
-        .form-group.group-2
-          = f.label :last_name
-          = f.text_field :last_name, placeholder:"Last name"
-          .help-block#lastNameBlock
-      .contact
-        .form-group.group-3
-          = f.label :email
-          = f.text_field :email, placeholder:"Email"
-          .help-block#emailBlock
-        .form-group.group-4
-          = f.label :phone
-          = f.text_field :phone, placeholder:"Phone"
-          .help-block#phoneBlock
-      .form-group.group-5
-        = f.submit class: "btn btn-primary"
+      .form-wrapper
+        .upper-box
+          .names
+            .form-group.group-1
+              = f.label :first_name
+              = f.text_field :first_name, placeholder:"First name"
+              .help-block#firstNameBlock
+            .form-group.group-2
+              = f.label :last_name
+              = f.text_field :last_name, placeholder:"Last name"
+              .help-block#lastNameBlock
+          .contact
+            .form-group.group-3
+              = f.label :email
+              = f.text_field :email, placeholder:"Email"
+              .help-block#emailBlock
+            .form-group.group-4
+              = f.label :phone
+              = f.text_field :phone, placeholder:"Phone"
+              .help-block#phoneBlock
+        .submit-button-block.form-group.group-5
+          = f.submit "Submit", class: "btn btn-primary"
       .help-block#successBlock
+    .share-icons-block
+      = social_share_button_tag("Redline", :url => "https://civredline.herokuapp.com/", desc: "Pledge to Protest if Trump crosses the Red Line.")
+      %br
+      %br
+      %br
     .terms_and_conditions
       By submitting this form you agree to our #{link_to "Terms and Conditions", terms_and_conditions_path}
           

@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap', '~> 4.0.0'
 gem 'sprockets-rails', '>= 2.3.2'
+gem 'social-share-button'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

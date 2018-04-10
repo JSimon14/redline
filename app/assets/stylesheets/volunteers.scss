@@ -66,8 +66,8 @@ body {
   border: #c1081f;
   border-style: solid;
   border-width: 3px;
-  width: 75%;
-  margin-left: 12.5%;
+  width: 50%;
+  margin-left: 25%;
 }
 #new_volunteer {
   display: flex;
@@ -90,4 +90,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.submit-button-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-icons-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper{
+  .upper-box{
+    .names{
+      float: left;
+    }
+    .contact{
+      float: right;
+    }
+  }
+  .submit-button-block{
+
+  }
+}
+
+$size: 50px;
+
+.social-share-button {
+  .ssb-icon {
+    background-size: $size $size;
+    height: $size;
+    width: $size;
+  }
 }
