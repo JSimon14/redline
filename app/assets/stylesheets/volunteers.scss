@@ -26,20 +26,43 @@ body {
   color: #c1081f;
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
   max-width: 100%;
+  margin: auto;
 }
 .content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  width: 50%;
+}
+.redline {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.redline a {
+  color: #c30920;
+  text-decoration: none;
+}
+.redline a:hover{
+  color: red;
+}
+.redunderline {
+  border-bottom: #c30920 1px solid;
+  margin-right: 7rem;
+  margin-left: -9rem;
+  height: 1px;
 }
 .motivation, .h2#join, .h2#privacy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8rem;
-}
-.content > div.motivation:nth-child(odd) {
-  text-align: right;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  margin: 5em 0;
+  width: 80%;
 }
 #emphasized {
   font-weight: 600;
@@ -85,7 +108,6 @@ body {
 .form-group {
   padding: 1rem;
 }
-
 .form-title {
   font-size: 3rem;
   font-weight: 600;
