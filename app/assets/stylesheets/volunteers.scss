@@ -17,6 +17,8 @@ body {
   position: absolute;
 }
 .h1 {
+  display: flex;
+  justify-content: center;
   font-size: 4.4rem;
   font-weight: 200;
   text-align: center;
