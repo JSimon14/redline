@@ -1,96 +1,38 @@
-.h1
-  _red ine
+%script{:type => "text/javascript",
+        :src => "https://actionnetwork.org/widgets/v3/petition/project-redline-defend-democracy-and-stand-up-to-trump?format=js&source=widget",
+        :async => "", :defer => ""}
+.header
+  %h1#project project
+.header
+  %h1#_redline _red ine
 
 .container
   .content
     .h3.motivation#initial-snippet
-      .redline#emphasized
-        Robert Mueller is investigating Trump’s connections to Russia.
-      .redunderline
+      .redline#emphasized Robert Mueller is investigating Trump’s connections to Russia.
     .h3.motivation
-      .redline
-        When Russia interfered in our 2016 election, our government asked Robert Mueller to investigate. As a former FBI director, war hero, and conservative, Mueller was seen as the man for the job <i>#{link_to("by Republicans and Democrats alike", "https://www.nytimes.com/2017/05/17/us/politics/robert-mueller-special-counsel-russia-investigation.html")}</i>.
-      .redunderline
+      .redline When Russia interfered in our 2016 election, our government asked Robert Mueller to investigate. As a former FBI director, war hero, and conservative, Mueller was seen as the man for the job <b>#{link_to("by Republicans and Democrats alike", "https://www.nytimes.com/2017/05/17/us/politics/robert-mueller-special-counsel-russia-investigation.html")}</b>.
     .h3.motivation
-      .redline
-        One year later, Mueller’s investigation is gaining momentum and evidence is emerging that Trump’s team colluded with Russia. Mueller has already charged notable Trump campaign officials with crimes, and more connections with Russia appear every week.
-      .redunderline
+      .redline#emphasized Mueller’s investigation is under attack from Trump.
     .h3.motivation
-      .redline#emphasized
-        Mueller’s investigation is under attack from Republican leaders and President Trump.
-      .redunderline
+      .redline One year later, Mueller’s investigation is gaining speed, <u>and evidence is emerging</u> that <u>Trump’s team may have worked with Russia</u> and <u>obstructed justice</u>. Mueller has already <u>charged notable Trump campaign officials</u> with crimes. However, Mueller’s investigation is under fire from Republican leaders and President Trump himself.
     .h3.motivation
-      .redline#emphasized
-        Trump is considering firing the person investigating him in a clear conflict of interest.
-      .redunderline
+      .redline#emphasized <b>Trump may fire Mueller to shut down the investigation and hide the truth.</b>
     .h3.motivation
-      .redline
-        If Trump is innocent, then he has nothing to hide and should let Mueller finish his investigation.
-        %br
-        On the other hand, if Trump’s campaign colluded with Russia, then the American people need to know the truth. Either way, Mueller must be allowed to do his job and find out what happened.
-      .redunderline
-    .h3.motivation
-      .redline
-        Nobody is above the law -- not even the President. If Trump fires the person investigating him, we need to hit the streets across America and march to send a message.
-      .redunderline
-    .h3.motivation
-      .redline#emphasized
-        If Trump fires Mueller, he crosses a red line.
-      .redunderline
+      .redline Trump has already <u>secretly tried to stop the investigation</u>, and is now <u>publicly considering firing Mueller</u>. If Trump is innocent, then he has nothing to hide. On the other hand, if Trump’s campaign conspired with Russia, then the American people need to know what happened. Either way, Mueller’s investigation is the only way we’ll know the truth.
 
-  .box
-    .accountable
-      Trump is accountable to us,
-      %br
-      and we deserve to know the truth.
+  .crossing-line
+    #text If Trump fires Mueller, he crosses a red line.
 
-  .content
-    .h2#join
-      %pledge
-        Will you join us in pledging to protest if Trump fires Mueller?
-    .h2#privacy
-      %h3.alerts
-        We’ll send you a rapid response alert on the day Mueller is fired, details about protests in your area, and an opportunity to provide feedback to the RedLine development team.
-      %hr
-      %h6.notice
-        %i We value your privacy. We won’t share your information without your consent.
-          
+  .law-and-order
+    .h3.truthiness
+      %p.redline Trump is accountable to us, and we deserve to know the truth.
+    .h3.not-prez
+      %p.redline Nobody is above the law–not even the President. If Trump fires the person investigating him, we need to take to the streets across America and march for the truth.
 
-  .form-content
-    .form-title
-      Sign Up for Rapid Alerts
-    = form_for @volunteer, remote: true, method: :post, id:'my-form' do |f|
-      .errors
-      .form-wrapper
-        .upper-box
-          .names
-            .form-group.group-1
-              = f.label :first_name
-              = f.text_field :first_name, placeholder:"First name"
-              .help-block#firstNameBlock
-            .form-group.group-2
-              = f.label :last_name
-              = f.text_field :last_name, placeholder:"Last name"
-              .help-block#lastNameBlock
-          .contact
-            .form-group.group-3
-              = f.label :email
-              = f.text_field :email, placeholder:"Email"
-              .help-block#emailBlock
-            .form-group.group-4
-              = f.label :phone
-              = f.text_field :phone, placeholder:"Phone"
-              .help-block#phoneBlock
-        .submit-button-block.form-group.group-5
-          = f.submit "Submit", class: "btn btn-primary"
-      .help-block#successBlock
-    .share-icons-block
-      = social_share_button_tag("Redline", :url => "https://civredline.herokuapp.com/", desc: "Pledge to Protest if Trump crosses the Red Line.")
-      %br
-      %br
-      %br
-    .terms_and_conditions
-      By submitting this form you agree to our #{link_to "Terms and Conditions", terms_and_conditions_path}
-      
+  .join-us
+    Will you join us in pledging to protest if Trump fires Mueller?
+    %p#rapidly We’ll send you a rapid response alert on the day Mueller is fired, along with details about protests in your area organized by MoveOn.org.
 
-      
+  .petition
+    #can-petition-area-project-redline-defend-democracy-and-stand-up-to-trump(style="width: 100%")

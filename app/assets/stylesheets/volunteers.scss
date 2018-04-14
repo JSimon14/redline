@@ -2,7 +2,7 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', monospace, sans-serif;
   src: 'https://fonts.googleapis.com/css?family=Montserrat:100';
 }
 body {
@@ -10,57 +10,77 @@ body {
   margin: 0;
   padding: 0;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > h1 {
+  font-size: 4.5rem !important;
+  color: #c0091d;
+}
+.header > h1#project {
+  margin: 0;
+  background: #f5f5f3;
+}
+.header > h1#_redline {
+  margin-right: 0.6em;
+}
 .errors {
   display: none;
 }
 .help-block {
   position: absolute;
 }
-.h1 {
-  font-size: 4.4rem;
-  font-weight: 200;
-  text-align: center;
-  margin-right: 2.7rem;
-  color: #c1081f;
-}
 .container {
   display: flex;
   flex-direction: column;
   align-items: right;
   max-width: 100%;
-  margin: auto;
+  margin: 6em auto;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  text-align: right;
-  width: 50%;
+.law-and-order {
+  margin-top: 2em;
+}
+.content, .law-and-order {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} 
+.join-us > #rapidly {
+  padding-top: 1.7em;
+  font-size: 1.5rem;
+  font-weight: initial;
+}
+.crossing-line, .join-us {
+  margin: 4em auto;
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.crossing-line, .redline, .join-us {
+  background: #f6f6f5;
+  border-top: #c1071e solid 1px;
+  border-bottom: #c1071e solid 1px;
+  padding: 2.4rem;
 }
 .redline {
-  background: rgba(128, 128, 128, 0.1);
-  padding: 1rem;
   margin-bottom: 1rem;
-  width: 80%;
 }
 .redline a {
-  color: #c30920;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  font-weight: unset;
 }
 .redline a:hover{
   color: red;
 }
-.redunderline {
-  border-bottom: #c30920 1px solid;
-  margin-right: 7rem;
-  margin-left: -9rem;
-  height: 1px;
-}
-.motivation, .h2#join, .h2#privacy {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  margin: 5em 0;
-  width: 80%;
+.motivation, .truthiness, .not-prez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em;
 }
 #emphasized {
   font-weight: 600;
@@ -68,20 +88,9 @@ body {
 .h3:not(#emphasized) {
   font-weight: 200;
 }
-.box {
-  display: flex;
-  justify-content: center;
-  margin: 0 20rem;
-  background: #c3071f;
-  font-size: 2.5rem;
-  text-align: center;
-}
-.box > .accountable {
-  padding: 1rem;
-  color: white;
-}
-#join, #privacy {
-  flex-direction: column;
+.petition {
+  margin: auto;
+  border: 1px solid #c1071e;
 }
 .form-content {
   margin-bottom: 25rem;
