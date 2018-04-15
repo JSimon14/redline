@@ -2,10 +2,15 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: url(redlineRedText.jpg) center fixed;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+}
+#id > img {
+  position: fixed;
+  width: 100%;
+  margin-top: -3.12em;
+  z-index: -999;
 }
 .header {
   display: flex;
@@ -26,6 +31,7 @@ body {
   margin-right: 0.6em;
 }
 .redline-q > h1#emphasized {
+  text-align: center;
   font-size: 3.5rem;
   margin: -0.3em;
 }
@@ -41,7 +47,7 @@ body {
 }
 .content, .law-and-order {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 } 
 .join-us > #rapidly {
   padding-top: 1.7em;
@@ -56,7 +62,7 @@ body {
   font-weight: bolder;
 }
 .crossing-line, .redline, .join-us, .redline-q {
-  background: #f6f6f5;
+  background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
   border-top: #c1071e solid 1px;
   border-bottom: #c1071e solid 1px;
   padding: 2.4rem;
@@ -97,8 +103,11 @@ body {
   Mobile devices, come hither.
 */
 @media screen and (max-width: 900px) {
-  .content {
-    grid-template-columns: repeat(1, 1fr);
+  .motivation, .truthiness, .not-prez, .redline-q {
+    margin: 3em auto; 
+  }
+  .content, .law-and-order  {
+    grid-template-columns: 1fr;
     width: 95%;
   }
   .join-us {
@@ -108,8 +117,14 @@ body {
   .law-and-order {
     grid-template-columns: unset;
   }
+  .h3.redline-q {
+    text-align: center;
+  }
+  .container > div {
+    margin-top: 7em;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800) {
   .motivation, .truthiness, .not-prez {
     margin: 3em .2em;
   }
