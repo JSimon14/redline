@@ -41,7 +41,7 @@ body {
   flex-direction: column;
   align-items: right;
   max-width: 100%;
-  margin: 6em auto;
+  margin: 6em 1em auto;
 }
 .law-and-order {
   margin-top: 2em;
@@ -57,7 +57,7 @@ body {
 }
 .crossing-line,
 .join-us,
-.terms_and_conditions {
+.privacy-policy {
   margin: 4em auto;
   width: 80%;
   text-align: center;
@@ -68,7 +68,7 @@ body {
 .redline,
 .join-us,
 .redline-q,
-.terms_and_conditions {
+.privacy-policy {
   background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
   border-top: #c1071e solid 1px;
   border-bottom: #c1071e solid 1px;
@@ -108,13 +108,41 @@ body {
 .truthiness > p.redline {
   font-weight: bold;
 }
-.terms_and_conditions {
+.privacy-policy {
   border-top: unset;
   font-weight: 100;
   font-size: 1rem;
   margin-top: 0;
   padding: 0 0.3em;
   width: 50%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer.redline {
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+}
+.footer > .contact {
+  flex: 4;
+}
+.footer > .civic {
+  flex: 1;
+}
+.civic > img {
+  width: 30%;
+}
+.privacy-page {
+  background: rgba(246, 246, 245, 0.75);
+  border: solid 1px #c1071e;
+  padding: 2em;
+  margin: 6em auto;
+  width: 70%;
+}
+.privacy-page > h1.privacy-page-title {
+  text-align: center;
 }
 
 /**
@@ -141,7 +169,7 @@ body {
   .h3.redline-q {
     text-align: center;
   }
-  .container > div {
+  .container > div:not(.privacy-policy) {
     margin-top: 7em;
   }
 }
