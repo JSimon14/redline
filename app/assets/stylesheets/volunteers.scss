@@ -40,8 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: right;
-  max-width: 100%;
-  margin: 6em 1em auto;
+  width: 100%;
 }
 .law-and-order {
   margin-top: 2em;
@@ -93,7 +92,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3em;
+  margin: 2em;
 }
 #emphasized {
   font-weight: 600;
