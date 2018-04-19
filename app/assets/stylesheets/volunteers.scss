@@ -2,7 +2,7 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: url(Redline.jpg) repeat-y center top, url(NoLine.jpg) no-repeat center center fixed;
+  background: url(NoLineCompressed.jpg) no-repeat center center fixed;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
@@ -201,7 +201,7 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  background-size: auto, cover;
+  background-size: cover;
 }
 
 /* Change the form background color, text color, and typeface */
