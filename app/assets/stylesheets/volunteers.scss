@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   background: url(redlineNoText.jpg) no-repeat center center fixed;
-  background-size: 100% auto;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
@@ -150,6 +149,7 @@ body {
 /**
   Mobile devices, come hither.
 */
+
 @media screen and (max-width: 900px) {
   .motivation,
   .truthiness,
@@ -175,6 +175,7 @@ body {
     margin-top: 7em;
   }
 }
+
 @media screen and (max-width: 800) {
   .motivation, .truthiness, .not-prez {
     margin: 3em .2em;
@@ -202,8 +203,7 @@ body {
 .can_embed #can_embed_form .button,
 .can_embed #donate_auto_modal input[type="submit"],
 .can_embed #donate_auto_modal .button {
-    background-color: #BB0B20
-!important;
+    background-color: #BB0B20 !important;
 }/* Remove the Action Network Logo */
 .can_embed #logo_wrap {
     display: none !important;
