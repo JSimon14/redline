@@ -2,7 +2,11 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: url(redlineRedText.jpg) center fixed;
+  background: url(redlineNoText.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
@@ -22,7 +26,7 @@ body {
 }
 .header > h1 {
   font-size: 4.5rem !important;
-  color: #c1071e;
+  color: #BB0B20;
 }
 .header > h1#project{
   background: #f5f5f3;
@@ -71,8 +75,8 @@ body {
 .redline-q,
 .privacy-policy {
   background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
-  border-top: #c1071e solid 1px;
-  border-bottom: #c1071e solid 1px;
+  border-top: #BB0B20 solid 1px;
+  border-bottom: #BB0B20 solid 1px;
   padding: 2rem;
 }
 .redline {
@@ -84,7 +88,7 @@ body {
   font-weight: unset;
 }
 .redline a:hover{
-  color: #c1071e;
+  color: #BB0B20;
 }
 .motivation,
 .truthiness,
@@ -105,7 +109,7 @@ body {
 }
 .petition {
   margin: auto;
-  border: 1px solid #c1071e;
+  border: 1px solid #BB0B20;
 }
 .truthiness > p.redline {
   font-weight: bold;
@@ -138,7 +142,7 @@ body {
 }
 .privacy-page {
   background: rgba(246, 246, 245, 0.75);
-  border: solid 1px #c1071e;
+  border: solid 1px #BB0B20;
   padding: 2em;
   margin: 6em auto;
   width: 70%;
@@ -202,7 +206,7 @@ body {
 .can_embed #can_embed_form .button,
 .can_embed #donate_auto_modal input[type="submit"],
 .can_embed #donate_auto_modal .button {
-    background-color: #c1071e
+    background-color: #BB0B20
 !important;
 }/* Remove the Action Network Logo */
 .can_embed #logo_wrap {
