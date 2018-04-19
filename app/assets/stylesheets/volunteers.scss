@@ -26,10 +26,10 @@ body {
 }
 .header > h1#project{
   background: #f5f5f3;
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 .header > h1#_redline{
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 .redline-q > h1#emphasized {
   text-align: center;
@@ -68,7 +68,12 @@ body {
 .crossing-line,
 .redline,
 .join-us,
-.redline-q,
+.redline-q, {
+  background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
+  border-top: #BB0B20 solid 1px;
+  border-bottom: #BB0B20 solid 1px;
+  padding: 2rem;
+}
 .privacy-policy {
   background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
   border-bottom: #BB0B20 solid 1px;
