@@ -3,10 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   background: url(redlineNoText.jpg) no-repeat center center fixed;
-  -webkit-background-size: contain auto;
-  -moz-background-size: contain auto;
-  -o-background-size: contain auto;
-  background-size: contain auto;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
