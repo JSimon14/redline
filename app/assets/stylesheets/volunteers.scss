@@ -7,9 +7,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 .background > img {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: center center fixed;
   max-height: 100vh;
   width: auto;
   z-index: -9999;
