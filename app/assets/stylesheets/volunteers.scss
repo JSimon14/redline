@@ -21,6 +21,7 @@ body {
   width: 100%;
   margin-top: -3.12em;
   z-index: -999;
+  max-height: 100%;
 }
 .header {
   display: flex;
@@ -208,12 +209,6 @@ body {
   .header > h1 {
     font-size: 4rem;
   }
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
 }
 
 /* Change the form background color, text color, and typeface */
