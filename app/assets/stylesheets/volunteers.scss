@@ -48,11 +48,11 @@ body {
 .content, .law-and-order {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: auto;
   width: 90%;
-} 
+}
 .join-us > #rapidly {
   padding-top: 1.7em;
   font-size: 1.5rem;
@@ -164,8 +164,8 @@ body {
     margin: 3em auto; 
   }
   .content, .law-and-order  {
-    grid-template-columns: 1fr;
     -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     width: 95%;
   }
   .join-us {
@@ -173,8 +173,8 @@ body {
     padding: 1em .6em;
   }
   .law-and-order {
-    grid-template-columns: unset;
     -ms-grid-columns: unset;
+    grid-template-columns: unset;
   }
   .h3.redline-q {
     text-align: center;
