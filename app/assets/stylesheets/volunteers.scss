@@ -10,16 +10,17 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  max-height: 100vh;
+  width: auto;
   z-index: -9999;
   margin-top: -3.2em;
 }
 #id > img {
   position: fixed;
-  height: 100vh;
-  width: auto;
+  width: 100%;
   margin-top: -3.12em;
   z-index: -999;
+  max-height: 100%;
 }
 .header {
   display: flex;
