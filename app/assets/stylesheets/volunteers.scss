@@ -33,12 +33,12 @@ body {
   font-size: 4.5rem !important;
   color: #BB0B20;
 }
-.header > h1#project{
-  background: #f5f5f3;
-}
-.header > h1#_redline,
 .header > h1#project {
-  margin: 0 10px 0 0;
+  background: #f5f5f3;
+  margin: 0 1.5% 0 0;
+}
+.header > h1#_redline{
+  margin: 0 1.5% 0 0;
 }
 .redline-q > h1#emphasized {
   text-align: center;
@@ -55,11 +55,13 @@ body {
   margin-top: 2em;
 }
 .content, .law-and-order {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   margin: auto;
   width: 90%;
-} 
+}
 .join-us > #rapidly {
   padding-top: 1.7em;
   font-size: 1.5rem;
@@ -77,10 +79,14 @@ body {
 .crossing-line,
 .redline,
 .join-us,
-.redline-q,
-.privacy-policy {
+.redline-q, {
   background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
   border-top: #BB0B20 solid 1px;
+  border-bottom: #BB0B20 solid 1px;
+  padding: 2rem;
+}
+.privacy-policy {
+  background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
   border-bottom: #BB0B20 solid 1px;
   padding: 2rem;
 }
@@ -89,8 +95,7 @@ body {
 }
 .redline a {
   color: inherit;
-  text-decoration: underline;
-  font-weight: unset;
+  font-weight: bold;
 }
 .redline a:hover{
   color: #BB0B20;
@@ -159,6 +164,7 @@ body {
 /**
   Mobile devices, come hither.
 */
+
 @media screen and (max-width: 900px) {
   .motivation,
   .truthiness,
@@ -167,6 +173,7 @@ body {
     margin: 3em auto; 
   }
   .content, .law-and-order  {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     width: 95%;
   }
@@ -175,6 +182,7 @@ body {
     padding: 1em .6em;
   }
   .law-and-order {
+    -ms-grid-columns: unset;
     grid-template-columns: unset;
   }
   .h3.redline-q {
@@ -184,6 +192,7 @@ body {
     margin-top: 7em;
   }
 }
+
 @media screen and (max-width: 800) {
   .motivation, .truthiness, .not-prez {
     margin: 3em .2em;
@@ -200,6 +209,13 @@ body {
     font-size: 4rem;
   }
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
 /* Change the form background color, text color, and typeface */
 .can_embed #can_embed_form,
 .can_embed #donate_auto_modal {
@@ -211,8 +227,7 @@ body {
 .can_embed #can_embed_form .button,
 .can_embed #donate_auto_modal input[type="submit"],
 .can_embed #donate_auto_modal .button {
-    background-color: #BB0B20
-!important;
+    background-color: #BB0B20 !important;
 }/* Remove the Action Network Logo */
 .can_embed #logo_wrap {
     display: none !important;
