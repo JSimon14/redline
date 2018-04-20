@@ -10,8 +10,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  max-height: 100vh;
-  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
   z-index: -9999;
   margin-top: -3.2em;
 }
@@ -20,7 +21,6 @@ body {
   width: 100%;
   margin-top: -3.12em;
   z-index: -999;
-  max-height: 100%;
 }
 .header {
   display: flex;
