@@ -2,16 +2,19 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background: url(redlineRedText.jpg) center fixed;
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif
 }
-#id > img {
+.background > img {
   position: fixed;
-  width: 100%;
-  margin-top: -3.12em;
-  z-index: -999;
+  top: 0;
+  left: 0;
+  height: 121vh;
+  width: 100vw;
+  z-index: -9999;
+  object-fit: cover;
+  margin-top: -2.8em
 }
 .header {
   display: flex;
