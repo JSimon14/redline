@@ -18,11 +18,12 @@ body {
 .header {
   font-family: 'PT Mono', monospace;
   text-align: center;
-  margin: 0 0 0 1%;
+  margin: 0 0 0 0%;
 }
 .header > h1 {
   font-size: 4.6rem;
   color: #AD1126;
+  background-color: #F3F3F3;
 }
 .redline-q {
   margin-top: 4em !important;  
@@ -79,6 +80,13 @@ body {
   font-weight: unset;
 }
 .redline a:hover{
+  color: #AD1126;
+}
+.joinus a {
+  color: black;
+  text-decoration: underline;
+}
+.joinus a:hover{
   color: #AD1126;
 }
 .motivation,
