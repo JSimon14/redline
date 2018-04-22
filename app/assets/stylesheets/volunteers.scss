@@ -18,11 +18,13 @@ body {
 .header {
   font-family: 'PT Mono', monospace;
   text-align: center;
-  margin: 0 0 0 0%;
+  margin: 0 0.5% 0 0;
 }
 .header > h1 {
   font-size: 4.6rem;
   color: #AD1126;
+}
+.header > h1#project {
   background-color: #F3F3F3;
 }
 .redline-q {
