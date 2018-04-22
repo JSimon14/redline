@@ -18,10 +18,11 @@ body {
 .header {
   font-family: 'PT Mono', monospace;
   text-align: center;
+  margin: 0 3% 0 0;
 }
 .header > h1 {
   font-size: 4.6rem;
-  color: #a0262b;
+  color: #AD1126;
 }
 .redline-q {
   margin-top: 4em !important;  
@@ -65,20 +66,20 @@ body {
 .redline-q,
 .privacy-policy {
   background: linear-gradient(90deg, rgba(246, 246, 245, 0.45), whitesmoke, rgba(246, 246, 245, 0.45));
-  border-top: #c1071e solid 1px;
-  border-bottom: #c1071e solid 1px;
+  border-top: #AD1126 solid 1px;
+  border-bottom: #AD1126 solid 1px;
   padding: 2rem;
 }
 .redline {
   margin-bottom: 1rem;
 }
 .redline a {
-  color: inherit;
+  color: black;
   text-decoration: underline;
   font-weight: unset;
 }
 .redline a:hover{
-  color: #c1071e;
+  color: #AD1126;
 }
 .motivation,
 .truthiness,
@@ -99,7 +100,7 @@ body {
 }
 .petition {
   margin: auto;
-  border: 1px solid #c1071e;
+  border: 1px solid #AD1126;
 }
 .truthiness > p.redline {
   font-weight: bold;
@@ -135,7 +136,7 @@ body {
 }
 .privacy-page {
   background: rgba(246, 246, 245, 0.75);
-  border: solid 1px #c1071e;
+  border: solid 1px #AD1126;
   padding: 2em;
   margin: 6em auto;
   width: 70%;
@@ -195,4 +196,24 @@ body {
   .civic > img {
     width: 100%;
   }
+}
+/* Change the form background color, text color, and typeface */
+.can_embed #can_embed_form,
+.can_embed #donate_auto_modal {
+	background-color: whitesmoke !important;
+	color: black !important;
+	font-family: Helvetica, Arial, sans-serif;
+}
+/* Change link color */
+.can_embed #can_embed_form a,
+.can_embed #donate_auto_modal a {
+	color: black !important;
+}
+/* Button Background Color */
+.can_embed .can_button,
+.can_embed #can_embed_form input[type="submit"],
+.can_embed #can_embed_form .button,
+.can_embed #donate_auto_modal input[type="submit"],
+.can_embed #donate_auto_modal .button {
+	background-color: #AD1126 !important;
 }
