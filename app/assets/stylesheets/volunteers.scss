@@ -61,7 +61,6 @@ body {
   width: 80%;
   text-align: center;
   font-size: 2.5rem;
-  font-weight: bolder;
 }
 .crossing-line,
 .redline,
@@ -84,11 +83,11 @@ body {
 .redline a:hover{
   color: #AD1126;
 }
-.joinus a {
+.join-us a {
   color: black;
   text-decoration: underline;
 }
-.joinus a:hover{
+.join-us a:hover{
   color: #AD1126;
 }
 .motivation,
@@ -130,7 +129,7 @@ body {
 .footer.redline {
   margin: auto;
   padding: 1rem;
-  width: 90%;
+  width: 80%;
 }
 .footer > .contact {
   flex: 4;
