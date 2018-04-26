@@ -48,6 +48,10 @@ body {
   grid-template-columns: 1fr 1fr;
   margin: auto;
   width: 90%;
+}
+} 
+.join-us {
+  font-weight: 600;
 } 
 .join-us > #rapidly {
   padding-top: 1.7em;
@@ -116,13 +120,14 @@ body {
 }
 .privacy-policy {
   border-top: unset;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1rem;
   margin-top: 0;
   padding: 0 0.3em;
   width: 50%;
 }
 .footer {
+  font-weight: 200;
   display: flex;
   align-items: center;
 }
